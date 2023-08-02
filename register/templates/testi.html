@@ -1,0 +1,140 @@
+
+
+{% extends "base.html" %}
+{% block content %}
+<div class="testi_head">
+    <h1>Our Testimonials</h1>
+</div>
+<section class="background-image">
+
+
+
+<div class="c">
+    {% for n in servicedata %}
+
+    <div class="{{n.testi_icon}}">
+        <img src="/static/kash1.jpeg"
+        alt="this image contains user-image">
+    </div>
+    <div class="contents">
+        <h3 class="names">{{n.testi_name}}</h3>
+        <p class="usernames">{{n.testi_sub_name}}</p>
+        <div class="li">
+            <a class="facebook" href="https://www.facebook.com/geeksforgeeks.org/"
+                target="_blank" title="GFG_facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a class="git" href="https://github.com/topics/geeksforgeeks"
+                title="GFG_github" target="_blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a class="linkedin" href="https://www.geeksforgeeks.org/tag/linkedin/"
+                title="GFG_linkedin" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>     
+            <a class="insta" href="https://www.instagram.com/geeks_for_geeks/?hl=en"
+                target="_blank" title="GFG_instagram">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </div>
+
+        <p class="details">
+            {{n.testi_desc}}
+        </p>
+
+
+        <a class="effect effect-4" href="https://www.linkedin.com/in/kashish-singh-939a10222/">
+            {{n.testi_follow}}
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="c2">
+    {% for n in servicedata %}
+  <div class="user-image">
+      <img src="/static/kash1.jpeg"
+      alt="this image contains user-image">
+  </div>
+  <div class="contents">
+      <h3 class="names">KRIDA</h3>
+      <p class="usernames">DATA ANALTICS</p>
+      <div class="li">
+          <a class="facebook" href="https://www.facebook.com/geeksforgeeks.org/"
+              target="_blank" title="GFG_facebook">
+              <i class="fab fa-facebook"></i>
+          </a>
+          <a class="git" href="https://github.com/topics/geeksforgeeks"
+              title="GFG_github" target="_blank">
+              <i class="fab fa-github-square"></i>
+          </a>
+          <a class="linkedin" href="https://www.geeksforgeeks.org/tag/linkedin/"
+              title="GFG_linkedin" target="_blank">
+              <i class="fab fa-linkedin"></i>
+          </a>     
+          <a class="insta" href="https://www.instagram.com/geeks_for_geeks/?hl=en"
+              target="_blank" title="GFG_instagram">
+              <i class="fab fa-instagram-square"></i>
+          </a>
+      </div>
+
+      <p class="details">
+          A Computer Science portal for geeks
+      </p>
+
+
+      <a class="effect effect-4" href="https://www.linkedin.com/in/kashish-singh-939a10222/">
+          Follow
+      </a>
+  </div>
+  {% endfor %}
+</div>
+
+
+<div class="c3">
+    {% for n in servicedata %}
+  <div class="user-image">
+   
+      <img src="/static/kash1.jpeg"
+      alt="this image contains user-image">
+  </div>
+  <div class="contents">
+      <h3 class="names">KASHSISH SINGH</h3>
+      <p class="usernames">BACKEND DEVELOPER</p>
+      <div class="li">
+          <a class="facebook" href="https://www.facebook.com/geeksforgeeks.org/"
+              target="_blank" title="GFG_facebook">
+              <i class="fab fa-facebook"></i>
+          </a>
+          <a class="git" href="https://github.com/topics/geeksforgeeks"
+              title="GFG_github" target="_blank">
+              <i class="fab fa-github-square"></i>
+          </a>
+          <a class="linkedin" href="https://www.geeksforgeeks.org/tag/linkedin/"
+              title="GFG_linkedin" target="_blank">
+              <i class="fab fa-linkedin"></i>
+          </a>     
+          <a class="insta" href="https://www.instagram.com/geeks_for_geeks/?hl=en"
+              target="_blank" title="GFG_instagram">
+              <i class="fab fa-instagram-square"></i>
+          </a>
+      </div>
+
+      <p class="details">
+          A Computer Science portal for geeks
+      </p>
+
+
+      <a class="effect effect-4" href="https://www.linkedin.com/in/kashish-singh-939a10222/">
+          Follow
+      </a>
+  </div>
+  {% endfor %}
+</div> 
+
+
+  
+
+</section>
+
+{% endblock %}

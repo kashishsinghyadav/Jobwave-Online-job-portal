@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="par">
+    <h1>Search...</h1>
+    <p>find a a job with your skills set</p>
+  </div>
+<section class="background-image">
+    <div class="searchingbox">
+        <form  method="get"action="{% url 'job'%}">
+            <input type="text" name="search" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    
+
+
+
+
+
+
+<div class="apply">
+    {% for n in job_data %}
+        <div class="card mx-auto">
+            <div class="row">
+                <div class="log ml-3 mb-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxDRpxI5gXgaVmnO-VgcVUNOkca91jIpS75Flbzkz5W_5g5_V5&usqp=CAU"></div>
+                <div class="head right"><i class="fas fa-ellipsis-h"></i></div>
+            </div>
+                <div class="card-title">
+                    <p class="heading">{{ n.create_info}}&nbsp;<i class="far fa-compass"></i></p>
+                </div>
+                
+                <p class="{{ n.create_desc }}">You will be responsible for the visual design<br>for multi device.Understand basic design,<br>User journey, Ideation and Wireframing, etc...</p>
+                <div class="row btnrow my-4">
+                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-success btn-sm" style="background: #00ff002b;">Full Time</button></div>
+                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-primary btn-sm" style="background: #007bff33;">Min. 1 year</button></div>
+                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-danger btn-sm" style="background: #dc35452e;">Director</button></div>
+                </div>
+    
+                <div class="mutual"><i class="fas fa-users"></i>&nbsp;&nbsp;<span>5 Friends piwork here</span></div>
+                <div class="row btnsubmit mt-4">
+                    <div class="col-md-6 col-6">
+                        <a href="{{ n.create_link }}" > <button type="button" class="btn btn-primary btn-lg"><span>Apply Now</span></button></a>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <button type="submit" class="btn btn-dark btn-lg"><span>Message</span></button>
+                    </div>
+                </div>
+        </div>
+
+        {% endfor %}
+
+        
+
+    </div>
+
+    <div class="apply1">
+        <div class="card mx-auto">
+            <div class="row">
+                <div class="log ml-3 mb-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxDRpxI5gXgaVmnO-VgcVUNOkca91jIpS75Flbzkz5W_5g5_V5&usqp=CAU"></div>
+                <div class="head right"><i class="fas fa-ellipsis-h"></i></div>
+            </div>
+                <div class="card-title">
+                    <p class="heading">Data Analyticals&nbsp;<i class="far fa-compass"></i></p>
+                </div>
+                
+                <p class="text-muted">You will be responsible for the visual design<br>for multi device.Understand basic design,<br>User journey, Ideation and Wireframing, etc...</p>
+                <div class="row btnrow my-4">
+                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-success btn-sm" style="background: #00ff002b;">Full Time</button></div>
+                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-primary btn-sm" style="background: #007bff33;">Min. 1 year</button></div>
+                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-danger btn-sm" style="background: #dc35452e;">Director</button></div>
+                </div>
+    
+                <div class="mutual"><i class="fas fa-users"></i>&nbsp;&nbsp;<span>5 Friends work here</span></div>
+                <div class="row btnsubmit mt-4">
+                    <div class="col-md-6 col-6">
+                        <a href="https://www.linkedin.com/in/kashish-singh-939a10222/" ><button  type="button" class="btn btn-primary btn-lg"><span>Apply Now</span></button></a>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <button   type="submit" class="btn btn-dark btn-lg"><span>Message</span></button>
+                    </div>
+                </div>
+        </div>
+
+
+        
+
+    </div>
+    <div class="apply2">
+        <div class="card mx-auto">
+            <div class="row">
+                <div class="log ml-3 mb-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxDRpxI5gXgaVmnO-VgcVUNOkca91jIpS75Flbzkz5W_5g5_V5&usqp=CAU"></div>
+                <div class="head right"><i class="fas fa-ellipsis-h"></i></div>
+            </div>
+                <div class="card-title">
+                    <p class="heading">Frontend-Developer&nbsp;<i class="far fa-compass"></i></p>
+                </div>
+                
+                <p class="text-muted">You will be responsible for the visual design<br>for multi device.Understand basic design,<br>User journey, Ideation and Wireframing, etc...</p>
+                <div class="row btnrow my-4">
+                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-success btn-sm" style="background: #00ff002b;">Full Time</button></div>
+                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-primary btn-sm" style="background: #007bff33;">Min. 1 year</button></div>
+                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-danger btn-sm" style="background: #dc35452e;">Director</button></div>
+                </div>
+    
+                <div class="mutual"><i class="fas fa-users"></i>&nbsp;&nbsp;<span>5 Friends work here</span></div>
+                <div class="row btnsubmit mt-4">
+                    <div class="col-md-6 col-6">
+                        <a href="https://www.linkedin.com/in/kashish-singh-939a10222/" ><button type="button" class="btn btn-primary btn-lg"><span>Apply Now</span></button></a>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <button type="submit" class="btn btn-dark btn-lg"><span>Message</span></button>
+                    </div>
+                </div>
+        </div>
+
+
+        
+
+    </div>
+
+    
+
+</section> 
+
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<section class="background-image">
+
+  <div class="res">
+    <h2 class="create-res">BUILD RESUME</h2>
+    <form id="form1" action="{% url 'res' 1 %}" method="POST">
+      {% csrf_token %}
+      
+      <label class="label1">Name:</label>
+      <input type="text" name="name" placeholder="enter name" /><br />
+      <label class="label1">Address:</label>
+      <input type="text" name="address" placeholder="enter current address" /><br />
+      <label class="label1">City:</label>
+      <input type="text" name="city" placeholder="eg. kanpur" /><br />
+      <label class="label1">State:</label>
+      <input type="text" name="state" placeholder="eg.uttar pradesh" /><br />
+      <label class="label1">Phone:</label>
+      <input type="text" name="phone" placeholder="must be 10 digit" /><br />
+      <label class="label1">Email:</label>
+      <input type="text" name="email" placeholder="kashishh@gmail.com" /><br />
+      <label class="label1">University:</label>
+      <input type="text" name="university" placeholder="eg.psit" /><br />
+
+
+      <h2 class="label1">About</h2>
+      <textarea  name="summary" rows="4" cols="50"placeholder="tell about yourself" ></textarea><br />
+
+      <h2 class="label1">Education</h2>
+      <textarea name="education" rows="4" cols="50" placeholder="eg... xyz collage" ></textarea><br />
+
+      <h2 class="label1">Experience</h2>
+      <textarea name="experience" rows="4" cols="50" placeholder="your experience " ></textarea><br />
+
+      <h2 class="label1">Skills</h2>
+      <textarea name="skills" rows="4" cols="50"  placeholder="eg.. c++,c,python" ></textarea><br />
+
+      <input class="" type="submit" value="Generate Resume" />
+    </form>
+  </div>
+
+
+<div>
+
+</section>
+
+
+
+
+{% endblock %}

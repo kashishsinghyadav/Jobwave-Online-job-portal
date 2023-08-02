@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="background-image">
+
+
+
+<button class="open-button" onclick="openForm()">Create Job</button>
+
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="#" class="form-container" method="post">
+   
+    <h1>Create Job</h1>
+    {% csrf_token %}
+
+    <label for="text"><b>Job Title</b></label>
+    <input type="text" placeholder="Enter Title" name="title" required>
+
+    <label for="text"><b>Description</b></label>
+    <input type="text" placeholder="Enter Description" name="desc" required>
+    <label for="text"><b>Job Link</b></label>
+    <input type="text" placeholder="Enter link" name="link" required>
+
+    <button type="submit" class="btn">Save</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+    
+
+</section>
+
+
+{% endblock %}
