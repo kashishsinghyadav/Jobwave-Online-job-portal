@@ -1,11 +1,72 @@
-# Jobwave-Online-job-portal
-online job portal provides service to the job applicants to search for working opportunities. user can register himself in a website after successful registration they are also create resume and based on resume the system reccomend you job and user also search for a job as per their interest , the user also able to add the new job post .
+# JobWave Online Job Portal
 
+JobWave is an online job portal that facilitates job seekers in finding suitable job opportunities and assists employers in posting job vacancies. The platform integrates authentication and authorization using JWT (JSON Web Tokens) authentication for secure access. Additionally, it features resume building functionality, job posting capabilities, and advanced job search functionalities.
+
+## Features
+
+- User authentication and authorization with JWT tokens.
+- Resume building functionality for job seekers.
+- Job posting functionality for employers.
+- Advanced job search functionalities.
+- Testimonials section for user feedback.
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/yourusername/jobwave-online-job-portal.git
+    ```
+
+2. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Apply database migrations:
+
+    ```bash
+    python manage.py migrate
+    ```
+
+4. Create a superuser account:
+
+    ```bash
+    python manage.py createsuperuser
+    ```
+
+5. Run the Django server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+## Usage
+
+1. Launch the Django server.
+2. Register as a job seeker or employer, or log in if you already have an account.
+3. For job seekers:
+   - Build your resume with the provided tools.
+   - Search for job opportunities based on your preferences.
+4. For employers:
+   - Post job vacancies with detailed descriptions.
+   - Review applicants' resumes and contact suitable candidates.
+5. Explore the testimonials section to see user feedback.
+
+## API Endpoints
+
+- `/api/token/`: Obtain JWT token.
+- `/api/token/refresh/`: Refresh JWT token.
+- `/api/resumes/`: Manage resumes (CRUD operations).
+
+
+## Website is looks like that 👇
 
 ![Screenshot (26) - Copy](https://github.com/kashishsinghyadav/Jobwave-Online-job-portal/assets/117498422/6432844b-fc6d-43c4-ac31-e13e2db7fe41)
 
 
-User can register first after registration he/she should able to login to the website
+
 
 𝘀𝘁𝗲𝗽𝟭:
 ![Screenshot (32)](https://github.com/kashishsinghyadav/Jobwave-Online-job-portal/assets/117498422/f9aff1f7-332b-4bcf-a9ce-3640f90c2216)
