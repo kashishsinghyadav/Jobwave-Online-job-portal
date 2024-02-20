@@ -15,8 +15,7 @@ JobWave is an online job portal that facilitates job seekers in finding suitable
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/jobwave-online-job-portal.git
-    ```
+    git clone https://github.com/kashishsinghyadav/Jobwave-Online-job-portal
 
 2. Install the required dependencies:
 
